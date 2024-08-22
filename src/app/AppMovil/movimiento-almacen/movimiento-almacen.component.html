@@ -1,0 +1,10 @@
+<label>moviento almacen</label>
+<div>
+  <h2>QR Code Scanner</h2>
+  <button (click)="startScan()">Start Scanning</button>
+  <video #video width="400" height="300" autoplay></video>
+  <div *ngIf="result">
+    <h3>Scan Result:</h3>
+    <p>{{ result }}</p>
+  </div>
+</div>
