@@ -10,7 +10,7 @@ export const ROUTES: RouteInfo[] = [
             { path: '/AppMovil/reparar', title: 'Reparar', icon: 'bx bx-right-arrow-alt', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
             { path: '/AppMovil/imprimir_cajas', title: 'Imprimir Cajas', icon: 'bx bx-right-arrow-alt', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
         ]
-    }/* ,
+    } ,
     {
         path: '', title: 'Application', icon: 'bi bi-grid', class: 'sub', badge: '', badgeClass: '', isExternalLink: false,
         submenu: [
@@ -163,7 +163,7 @@ export const ROUTES: RouteInfo[] = [
             ]
     },
     { path: 'https://codervent.com/dashtreme-angular/demo/vertical/docs', title: 'Documentation', icon: 'bi bi-file-earmark-code', class: '', badge: '', badgeClass: '', isExternalLink: true, submenu: [] },
-    { path: 'https://themeforest.net/user/codervent/portfolio', title: 'Support', icon: 'bi bi-headset', class: '', badge: '', badgeClass: '', isExternalLink: true, submenu: [] } */
+    { path: 'https://themeforest.net/user/codervent/portfolio', title: 'Support', icon: 'bi bi-headset', class: '', badge: '', badgeClass: '', isExternalLink: true, submenu: [] } 
 
     
 ];
