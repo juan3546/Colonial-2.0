@@ -41,6 +41,7 @@
               "src/assets/plugins/datatable/css/dataTables.bootstrap5.min.css",
               "src/assets/sass/app.scss",
               "src/styles.scss"
+
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",

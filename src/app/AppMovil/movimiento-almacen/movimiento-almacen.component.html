@@ -6,12 +6,19 @@
         <div class="card-body">
           <form class="row">
             <div class=" col-12 mb-2">
-              <div class="input-group mb-3 d-flex">
-                <button class="btn btn-secondary" type="button"><i class="bi bi-search"></i></button>
-                <input type="text" class="form-control mx-2" placeholder="" aria-label="Example text with two button addons">
-                <button class="btn btn-danger" type="button"><i class="bi bi-trash"></i></button>
+            <div _ngcontent-utt-c226="" class="input-group">
+              <div _ngcontent-utt-c226="" class="input-group-prepend">
+                <button _ngcontent-utt-c226="" type="button" class="btn btn-secondary">
+                  <i class="bi bi-search"></i>
+                </button>
+              </div>
+            <input _ngcontent-utt-c226="" type="text" placeholder="Ingresa ID de la etiqueta" class="form-control">
+            <div _ngcontent-utt-c226="" class="input-group-append">
+              <button _ngcontent-utt-c226="" type="button" class="btn btn-danger">
+                <i class="bi bi-trash"></i>
+              </button>
             </div>
-            
+          </div>
               
             </div>
             
@@ -57,12 +64,36 @@
                 </select>
               </div>
             </div>
+            <div class="col-12">
+              <div class="mb-3">
+                <label class="form-label">Pedido</label>
+                <select class="form-select">
+                  <option value="United States">Selecciona uno</option>
+                  <option value="United Kingdom">cliente 0</option>
+                  <option value="Afghanistan">Cliente 5</option>
+                  <option value="Aland Islands">Cliente 10</option>
+                  <option value="Albania">Cliente 20</option>  
+                </select>
+              </div>
+            </div>
             <div class="col-6 d-flex">
-              <button (click)="startScan()" type="button" class="btn btn-light px-1 m-auto radius-50 d-flex justify-content-center align-items-center"><i class="fadeIn m-auto animated bx bx-scan"></i><span class="mx-1 fs-6">Escanear</span></button>
+              <button (click)="startScan()" type="button" class="btn btn-light px-1 m-auto radius-50 d-flex justify-content-center align-items-center"><i class="fadeIn m-auto animated bx bx-scan"></i><span class="mx-1 fs-6">Escanear</span> </button>
             </div>
             <div class="col-6 d-flex text-sm">
               <button type="button" class="btn m-auto btn-light btn-block px-1 radius-50 d-flex justify-content-center align-items-center"><span class="mx-1 py-2" style="font-size: 12px;">Realizar Movimiento</span></button>
             </div>
+<!---->
+<div class="col-6">
+  <div class="row">
+    <span _ngcontent-utt-c243="" class="badge badge-pill badge-info">Escaneados:<span _ngcontent-utt-c243="" class="badge badge-pill badge-info"><h6>0</h6></span></span>
+  </div>
+</div>
+<div class="col-6">
+  <div class="row">
+    <span _ngcontent-utt-c243="" class="badge badge-pill badge-info">Movimientos:<span _ngcontent-utt-c243="" class="badge badge-pill badge-info"><h6>0</h6></span></span>
+  </div>
+</div>
+
            <!--  <div class="mb-3">
               <label class="form-label">Date time:</label>
               <input type="datetime-local" class="form-control">
