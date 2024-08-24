@@ -5,6 +5,8 @@ import { MovimientoAlmacenComponent } from './movimiento-almacen/movimiento-alma
 import { RepararComponent } from './reparar/reparar.component';
 import { VenderDevolverComponent } from './vender-devolver/vender-devolver.component';
 import { MovilRoutingModule } from './movil-routing.module';
+import { PruebaComponent } from './prueba/prueba.component';
+
 
  
 

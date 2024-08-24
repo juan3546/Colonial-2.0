@@ -5,6 +5,7 @@ import { MovimientoAlmacenComponent } from './movimiento-almacen/movimiento-alma
 import { VenderDevolverComponent } from './vender-devolver/vender-devolver.component';
 import { RepararComponent } from './reparar/reparar.component';
 import { ImprimirCajasComponent } from './imprimir-cajas/imprimir-cajas.component';
+import { PruebaComponent } from './prueba/prueba.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,13 @@ const routes: Routes = [
       {
         path: 'movimiento_almacen',
         component: MovimientoAlmacenComponent,
+        data: {
+          title: 'Movimiento Almacen'
+        }
+      },
+      {
+        path: 'prueba_movil',
+        component: PruebaComponent,
         data: {
           title: 'Movimiento Almacen'
         }
