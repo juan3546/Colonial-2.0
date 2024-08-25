@@ -91,8 +91,11 @@
                 <button type="button" class="btn m-auto btn-light btn-block px-1 radius-50 d-flex justify-content-center align-items-center"><span class="px-5 py-2" style="font-size: 14px;">Imprimir</span></button>
               </div>
               <div class="col-12 col-md-4 d-flex text-sm mt-3">
-                <button (click)="mostrarAlerta()" type="button" class="btn m-auto btn-light btn-block px-1 radius-50 d-flex justify-content-center align-items-center"><span class="mx-5 py-2" style="font-size: 14px;">Realizar</span></button>
-              </div>
+                
+                <button type="button" class="btn m-auto btn-light btn-block px-1 radius-50 d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleVerticallycenteredModal"><span class="mx-5 py-2" style="font-size: 14px;">Realizar</span></button>
+             <!--  <button (click)="mostrarAlerta()" type="button" class="btn m-auto btn-light btn-block px-1 radius-50 d-flex justify-content-center align-items-center"><span class="mx-5 py-2" style="font-size: 14px;">Realizar</span></button>
+            -->   
+            </div>
             </form>
           </div>
         </div>
@@ -100,3 +103,60 @@
     </div>
   </div>
   
+
+
+						<!-- Modal primero-->
+						<div class="modal fade" id="exampleVerticallycenteredModal" tabindex="-1" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title">Modal title</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">Parte 1 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</div>
+									<button type="button" class="btn btn-primary">Save changes</button>
+                                    <div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleVerticallycenteredModal2">Save changes</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+	<!-- Modal segundo-->
+    <div class="modal fade" id="exampleVerticallycenteredModal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">parte2 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</div>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#exampleVerticallycenteredModal3">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--modal tercero -->
+<div class="modal fade" id="exampleVerticallycenteredModal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">parte3 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</div>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>  
+</div>
+
+<!-- Button trigger modal final -->
+
