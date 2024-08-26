@@ -77,24 +77,16 @@
                   </select>
                 </div>
               </div>
-                <!---->
-  <div class="col-12">
-    <div class="row">
-      <span _ngcontent-utt-c243="" class="badge badge-pill badge-info">Escaneados:<span _ngcontent-utt-c243="" class="badge badge-pill badge-info"><h6>0</h6></span></span>
-    </div>
-  </div>
 
               <div class="col-12 col-md-4 d-flex text-sm mt-3">
-                <button type="button" class="btn btn-light m-auto radius-50 d-flex justify-content-center align-items-center px-5"><i class="fadeIn m-auto animated bx bx-scan"></i><span class="mx-1">Escanear</span></button>
+                <button (click)="startScan()" type="button" class="btn btn-light m-auto radius-50 d-flex justify-content-center align-items-center px-5"><i class="fadeIn m-auto animated bx bx-scan"></i><span class="mx-1" style="font-size: 14px;">Escanear</span></button>
               </div>
               <div class="col-12 col-md-4 d-flex text-sm mt-3">
-                <button type="button" class="btn m-auto btn-light btn-block px-1 radius-50 d-flex justify-content-center align-items-center"><span class="px-5 py-2" style="font-size: 14px;">Imprimir</span></button>
+                <button type="button" class="btn m-auto btn-light btn-block px-1 radius-50 d-flex justify-content-center align-items-center"><span class="px-5" style="font-size: 14px;"><i class="bi bi-file-earmark-break-fill"></i> Imprimir</span></button>
               </div>
               <div class="col-12 col-md-4 d-flex text-sm mt-3">
                 
-                <button type="button" class="btn m-auto btn-light btn-block px-1 radius-50 d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleVerticallycenteredModal"><span class="mx-5 py-2" style="font-size: 14px;">Realizar</span></button>
-             <!--  <button (click)="mostrarAlerta()" type="button" class="btn m-auto btn-light btn-block px-1 radius-50 d-flex justify-content-center align-items-center"><span class="mx-5 py-2" style="font-size: 14px;">Realizar</span></button>
-            -->   
+                <button type="button" class="btn m-auto btn-light btn-block px-1 radius-50 d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleVerticallycenteredModal"><span class="mx-5" style="font-size: 14px;"> <i class="bi bi-arrow-right-circle-fill"></i> Realizar</span></button>
             </div>
             </form>
           </div>

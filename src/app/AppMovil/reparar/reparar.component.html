@@ -22,27 +22,11 @@
                 
               </div>
 
-                    <div class="col-4">
-                        <div class="row">
-                            <span _ngcontent-utt-c243="" class="badge badge-pill badge-info">Escaneados:<span _ngcontent-utt-c243="" class="badge badge-pill badge-info"><h6>0</h6></span></span>
-                           </div> 
-                      </div>
-                      <div class="col-4">
-                        <div class="row">
-                            <span _ngcontent-utt-c243="" class="badge badge-pill badge-info">Contados:<span _ngcontent-utt-c243="" class="badge badge-pill badge-info"><h6>0</h6></span></span>
-                           </div>   
-                        </div>
-                      <div class="col-4">
-                        <div class="row">
-                         <span _ngcontent-utt-c243="" class="badge badge-pill badge-info">Sistema:<span _ngcontent-utt-c243="" class="badge badge-pill badge-info"><h6>0</h6></span></span>
-                        </div>
-                      </div>
-
               <div class="col-6 d-flex">
-                <button type="button" class="btn btn-light px-1 m-auto radius-50 d-flex justify-content-center align-items-center"><i class="fadeIn m-auto animated bx bx-scan"></i><span class="mx-1 fs-6">Escanear</span> </button>
+                <button (click)="startScan()" type="button" class="btn btn-light px-1 m-auto radius-50 d-flex justify-content-center align-items-center"><i class="fadeIn m-auto animated bx bx-scan"></i><span class="mx-1 fs-6">Escanear</span> </button>
               </div>
               <div class="col-6 d-flex text-sm">
-                <button type="button" class="btn m-auto btn-light btn-block px-1 radius-50 d-flex justify-content-center align-items-center"><span class="" style="font-size: 15px;"><i class="bi bi-gear"></i> Reparar </span></button>    
+                <button type="button" class="btn m-auto btn-light btn-block px-1 radius-50 d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleVerticallycenteredModal"><span class="" style="font-size: 15px;"><i class="bi bi-gear"></i> Reparar </span></button>    
             </div>
             </form>
           </div>
@@ -50,3 +34,59 @@
       </div>
     </div>
   </div>
+
+  
+
+						<!-- Modal primero-->
+						<div class="modal fade" id="exampleVerticallycenteredModal" tabindex="-1" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title">Datos Pares a reparar</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+                    
+                    <label for="exampleFormControlInput1" class="form-label pt-4">Estilo:</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="125">
+                    <label for="exampleFormControlInput1" class="form-label pt-4">Color:</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Rojo">
+                    <label for="exampleFormControlInput1" class="form-label pt-4">Talla:</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="265">
+                    <label for="exampleFormControlInput1" class="form-label pt-4">Pares contados:</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="2">
+                    
+                    <div class="modal-footer">
+										<button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-file-x"></i> Cancelar</button>
+										<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleVerticallycenteredModal2"><i class="bi bi-arrow-right-circle"></i> Continuar</button>
+									</div>
+								</div>
+							</div>
+						</div>
+            </div>
+	<!-- Modal segundo -->
+  <div class="modal fade" id="exampleVerticallycenteredModal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Datos en Sistema</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="col-12">
+         <div class="col-12"><label for="staticEmail" class="col-sm-12 col-form-label"><b>Escaneados: 1</b></label></div>
+         <div class="col-12"> <label for="staticEmail" class="col-sm-12 col-form-label"><b>Contados: 1</b></label></div>
+         <div class="col-12"> <label for="staticEmail" class="col-sm-12 col-form-label"><b>Sistema: 2</b></label></div>
+          
+          <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-file-x"></i> Cancelar</button>
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleVerticallycenteredModal3"><i class="bi bi-gear"></i> Reparar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Button trigger modal final -->
+

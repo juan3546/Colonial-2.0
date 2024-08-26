@@ -1,5 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { QRCodeScanner } from 'qr-code-scanner';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-movimiento-almacen',
@@ -59,4 +60,54 @@ export class MovimientoAlmacenComponent implements OnInit {
   ngOnDestroy() {
     this.stopScan(); // Asegúrate de detener la cámara al destruir el componente
   }
+
+
+  mostrarAlerta(tipo: string) {
+    switch (tipo) {
+      case 'success':
+        Swal.fire({
+          title: "Realizar movimiento",
+          text: "Movimiento realizado",
+          icon: "success"
+        });
+        break;
+      case 'error':
+        Swal.fire({
+          title: "Realizar movimiento",
+          text: "Movimiento no realizado",
+          icon: "error"
+        });
+        break;
+      case 'info':
+        Swal.fire({
+          title: "Realizar movimiento",
+          text: "Movimiento no realizado",
+          icon: "info"
+        });
+        break;
+      case 'warning':
+        Swal.fire({
+          title: "Realizar movimiento",
+          text: "Movimiento no realizado",
+          icon: "warning"
+        });
+        break;
+      case 'question':
+        Swal.fire({
+          title: "Realizar movimiento",
+          text: "Movimiento no realizado",
+          icon: "question"
+        });
+        break;
+      default:
+        Swal.fire({
+          title: "Realizar movimiento",
+          text: "Opción desconocida",
+          icon: "warning"
+        });
+        break;
+    }
+  }
+  
+
 }
