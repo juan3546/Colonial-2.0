@@ -2,26 +2,26 @@
   <div class="row">
     <div class="col-12">
       <div class="card">
-        
+
         <div class="card-body">
           <form class="row">
             <div class=" col-12 mb-2">
-            <div _ngcontent-utt-c226="" class="input-group">
-              <div _ngcontent-utt-c226="" class="input-group-prepend">
-                <button _ngcontent-utt-c226="" type="button" class="btn btn-secondary">
-                  <i class="bi bi-search"></i>
-                </button>
+              <div _ngcontent-utt-c226="" class="input-group">
+                <div _ngcontent-utt-c226="" class="input-group-prepend">
+                  <button _ngcontent-utt-c226="" type="button" class="btn btn-secondary">
+                    <i class="bi bi-search"></i>
+                  </button>
+                </div>
+                <input _ngcontent-utt-c226="" type="text" placeholder="Ingresa ID de la etiqueta" class="form-control">
+                <div _ngcontent-utt-c226="" class="input-group-append">
+                  <button _ngcontent-utt-c226="" type="button" class="btn btn-danger">
+                    <i class="bi bi-trash"></i>
+                  </button>
+                </div>
               </div>
-            <input _ngcontent-utt-c226="" type="text" placeholder="Ingresa ID de la etiqueta" class="form-control">
-            <div _ngcontent-utt-c226="" class="input-group-append">
-              <button _ngcontent-utt-c226="" type="button" class="btn btn-danger">
-                <i class="bi bi-trash"></i>
-              </button>
+
             </div>
-          </div>
-              
-            </div>
-            
+
             <div class="col-12">
               <div class="mb-3">
                 <label class="form-label">Estilo</label>
@@ -60,7 +60,7 @@
                   <option value="United Kingdom">Almacen</option>
                   <option value="Afghanistan">Embarque</option>
                   <option value="Aland Islands">Perdido</option>
-                  <option value="Albania">Defectuoso</option>  
+                  <option value="Albania">Defectuoso</option>
                 </select>
               </div>
             </div>
@@ -72,31 +72,42 @@
                   <option value="United Kingdom">cliente 0</option>
                   <option value="Afghanistan">Cliente 5</option>
                   <option value="Aland Islands">Cliente 10</option>
-                  <option value="Albania">Cliente 20</option>  
+                  <option value="Albania">Cliente 20</option>
                 </select>
               </div>
             </div>
             <div class="col-6 d-flex">
-              <button (click)="startScan()" type="button" class="btn btn-light px-1 m-auto radius-50 d-flex justify-content-center align-items-center"><i class="fadeIn m-auto animated bx bx-scan"></i><span class="mx-1 fs-6">Escanear</span> </button>
+              <button (click)="scanQR()" data-bs-toggle="modal" data-bs-target="#scanner" type="button"
+                class="btn btn-light px-1 m-auto radius-50 d-flex justify-content-center align-items-center"><i
+                  class="fadeIn m-auto animated bx bx-scan"></i><span class="mx-1 fs-6">Escanear</span> </button>
             </div>
             <div class="col-6 d-flex text-sm">
-              <button (click)="mostrarAlerta('info')"  type="button" class="btn m-auto btn-light btn-block px-1 radius-50 d-flex justify-content-center align-items-center"><span class="mx-1 py-2" style="font-size: 14px;"> <i class="bi bi-arrow-right-circle-fill"></i> Realizar Movimiento</span></button>
-             <!--  <button (click)="mostrarAlerta()"  type="button" class="btn m-auto btn-light btn-block px-1 radius-50 d-flex justify-content-center align-items-center"><span class="mx-5 py-2" style="font-size: 14px;">Realizar</span></button>
+              <button (click)="mostrarAlerta('info')" type="button"
+                class="btn m-auto btn-light btn-block px-1 radius-50 d-flex justify-content-center align-items-center"><span
+                  class="mx-1 py-2" style="font-size: 14px;"> <i class="bi bi-arrow-right-circle-fill"></i> Realizar
+                  Movimiento</span></button>
+              <!--  <button (click)="mostrarAlerta()"  type="button" class="btn m-auto btn-light btn-block px-1 radius-50 d-flex justify-content-center align-items-center"><span class="mx-5 py-2" style="font-size: 14px;">Realizar</span></button>
                -->
             </div>
-<!---->
-<div class="col-6">
-  <div class="row">
-    <span _ngcontent-utt-c243="" class="badge badge-pill badge-info">Escaneados:<span _ngcontent-utt-c243="" class="badge badge-pill badge-info"><h6>0</h6></span></span>
-  </div>
-</div>
-<div class="col-6">
-  <div class="row">
-    <span _ngcontent-utt-c243="" class="badge badge-pill badge-info">Movimientos:<span _ngcontent-utt-c243="" class="badge badge-pill badge-info"><h6>0</h6></span></span>
-  </div>
-</div>
+            <!---->
+            <div class="col-6">
+              <div class="row">
+                <span _ngcontent-utt-c243="" class="badge badge-pill badge-info">Escaneados:<span _ngcontent-utt-c243=""
+                    class="badge badge-pill badge-info">
+                    <h6>0</h6>
+                  </span></span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="row">
+                <span _ngcontent-utt-c243="" class="badge badge-pill badge-info">Movimientos:<span
+                    _ngcontent-utt-c243="" class="badge badge-pill badge-info">
+                    <h6>0</h6>
+                  </span></span>
+              </div>
+            </div>
 
-           <!--  <div class="mb-3">
+            <!--  <div class="mb-3">
               <label class="form-label">Date time:</label>
               <input type="datetime-local" class="form-control">
             </div>
@@ -138,6 +149,28 @@
             </div> -->
           </form>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="scanner" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <video id="preview" [style.object-fit]="previewFitMode" style="margin: auto;" class="col-12"></video>
+          <canvas id="canvas" style="display:none; margin: auto;"></canvas>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
