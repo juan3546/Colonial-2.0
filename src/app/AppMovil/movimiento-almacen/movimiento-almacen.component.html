@@ -77,9 +77,10 @@
               </div>
             </div>
             <div class="col-6 d-flex">
-              <button (click)="scanQR()" data-bs-toggle="modal" data-bs-target="#scanner" type="button"
+             
+                <button (click)="getAvailableDevices()" data-bs-toggle="modal" data-bs-target="#scanner" type="button"
                 class="btn btn-light px-1 m-auto radius-50 d-flex justify-content-center align-items-center"><i
-                  class="fadeIn m-auto animated bx bx-scan"></i><span class="mx-1 fs-6">Escanear</span> </button>
+                  class="fadeIn m-auto animated bx bx-scan"></i><span class="mx-1 fs-6">Escanear</span> </button> -->
             </div>
             <div class="col-6 d-flex text-sm">
               <button (click)="mostrarAlerta('info')" type="button"
@@ -164,8 +165,8 @@
       </div>
       <div class="modal-body">
         <div class="row">
-          <video id="preview" [style.object-fit]="previewFitMode" style="margin: auto;" class="col-12"></video>
-          <canvas id="canvas" style="display:none; margin: auto;"></canvas>
+          <zxing-scanner [start]="bandera" (scanSuccess)="handleQrCodeResult($event)">escanear
+          </zxing-scanner>
         </div>
       </div>
       <div class="modal-footer">

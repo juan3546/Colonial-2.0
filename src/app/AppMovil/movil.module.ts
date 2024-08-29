@@ -6,7 +6,8 @@ import { RepararComponent } from './reparar/reparar.component';
 import { VenderDevolverComponent } from './vender-devolver/vender-devolver.component';
 import { MovilRoutingModule } from './movil-routing.module';
 import { PruebaComponent } from './prueba/prueba.component';
-
+import { ZXingScannerModule } from '@zxing/ngx-scanner';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
  
 
@@ -19,7 +20,9 @@ import { PruebaComponent } from './prueba/prueba.component';
   ],
   imports: [
     CommonModule,
-    MovilRoutingModule
-  ]
+    MovilRoutingModule,
+    ZXingScannerModule
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class MovilModule { }
